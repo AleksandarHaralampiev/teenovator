@@ -7,6 +7,59 @@
     <link rel="stylesheet" href="../../static/styles.css">
     <title>BeBetter Recommendation System</title>
     <script src="../../static/scripts.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .questionnaire {
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .button-group {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db; /* Blue color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            margin: 0 5px;
+        }
+
+        .button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
 
@@ -15,13 +68,11 @@
         <div class="question">
             <h2>Question 2:</h2>
             <p>Projects</p>
-            <!-- Add input or textarea for user response -->
             <textarea id="bio" rows="4" cols="50"></textarea>
         </div>
 
         <div class="button-group">
-            <!-- Link to the next question or the next section -->
-            <a class="button" href="Q1_Bio.html">prev</a>
+            <a class="button" href="Q1_Bio.html">Prev</a>
             <a class="button" href="Q3_Cert.html" onclick="saveBioAndNavigate()">Next</a>
         </div>
     </div>
@@ -29,3 +80,4 @@
 
 </body>
 </html>
+

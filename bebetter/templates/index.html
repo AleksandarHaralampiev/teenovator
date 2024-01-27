@@ -16,17 +16,20 @@
         }
 
         #header-container {
-            background-color: #f2f2f2;
+            background-color: #0188e0; /* Updated background color */
             width: 100%;
             padding: 10px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: row; /* Align items in a row layout */
+            align-items: center; /* Center items horizontally */
+            justify-content: space-between; /* Spread items horizontally */
         }
 
         #logo {
             width: 50px;
             height: 50px;
             margin-right: 10px;
-            display: inline-block; /* Align logo and title in the same line */
         }
 
         #logo img {
@@ -38,7 +41,8 @@
         #title {
             font-size: 20px;
             font-weight: bold;
-            display: inline-block; /* Align logo and title in the same line */
+            color: #fff; /* Set text color to white */
+            margin: auto; /* Center the title vertically */
         }
 
         #content {
@@ -47,11 +51,12 @@
         }
 
         #lessons {
-            width: 25%;
+            width: 20%;
             height: calc(100vh - 50px);
             background-color: #f2f2f2;
             padding: 10px;
             overflow-y: auto;
+            box-sizing: border-box;
         }
 
         #lessons ul {
@@ -63,12 +68,15 @@
         #lessons li {
             margin-bottom: 5px;
             cursor: pointer;
+            padding: 5px;
+            border-bottom: 2px solid #ccc; /* Border line between lessons */
         }
 
         #video-container {
-            width: 75%;
+            width: 70%;
             height: calc(100vh - 50px);
             position: relative;
+            margin: 0 5%; /* 5% blank space on both sides of the video */
         }
 
         #video {
@@ -149,37 +157,8 @@
         <div id="video-container">
             <video id="video" src="../static/Lesson1.mp4" controls></video>
             <div id="video-title">Video Title</div>
-            
         </div>
     </div>
 </body>
 </html>
 
-<!-- 
-<ul>
-    <li>Lesson 1</li>
-    <li>Lesson 2</li>
-    <li>Lesson 3</li>
-    <li>Lesson 4</li>
-    <li>Lesson 5</li>
-    <li>Lesson 6</li>
-    <li>Lesson 7</li>
-    <li>Lesson 8</li>
-    <li>Lesson 9</li>
-    <li>Lesson 10</li>
-    <li>Lesson 11</li>
-    <li>Lesson 12</li>
-    <li>Lesson 13</li>
-    <li>Lesson 14</li>
-    <li>Lesson 15</li>
-    <li>Lesson 16</li>
-    <li>Lesson 17</li>
-    <li>Lesson 18</li>
-    <li>Lesson 19</li>
-    <li>Lesson 20</li>
-    <li>Lesson 21</li>
-    <li>Lesson 22</li>
-    <li>Lesson 23</li>
-    <li>Lesson 24</li>
-    <li>Lesson 25</li>
-</ul> -->
